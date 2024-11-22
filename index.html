@@ -4,13 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Asmeninė svetainė</title>
 </head>
 <body>
-    <h1>Labas, pasauli!</h1>
-    <p>Šis tekstas yra <b>paryškintas</b>.</p>
-    <p>Šis tekstas yra <i>kursyvu</i>.</p>
-    <p>Šis tekstas yra <u>pabrauktas</u>.</p>
+    <header>
+        <h1>Oskaras Koruža</h1>
+        <h1>Energetikos inžinerijos studentas</h1>
+    </header>
+    <section id="about">
+        <h2>Apie</h2>
+        <ul>
+            <li><strong>Miestas:</strong> Vilnius</li>
+            <li><strong>Telefono numeris:</strong> +370 650 08090</li>
+            <li><strong>Gimimo metai:</strong> 1990/06/10</li>
+            <li><strong>El. paštas:</strong> el.paštas@example.com</li>
+            <li><strong>Išsilavinimas:</strong> Aukštoji mokykla</li>
+        </ul>
+    </section>    
+    <section id="resume">
+        <h2>Aprašymas</h2>
+        <p>Esu talentingas ir kūrybingas inžinerijos specialistas iš Vilniaus, Lietuva. Dirbdamas programuotoju įmonėje „Technologijų pasaulis“, įgijau patirties programinės įrangos kūrime ir priežiūroje. Vėliau tapau vyresniuoju programuotoju įmonėje „Inovatyvūs sprendimai“, kur vadovavau naujiems projektams ir prisidėjau prie inovatyvių sprendimų kūrimo.
+
+            Visada siekiu tobulinti savo įgūdžius ir domėtis naujausiomis technologijų tendencijomis. Mano tikslas - kurti kokybiškus, inovatyvius ir naudotojams draugiškus sprendimus.</p>
+        
+        <h3>Išsilavinimas</h3>
+        <ul>
+            <li>
+                <strong>Universitetas:</strong> Vilniaus Tech Universitetas <br>
+                <strong>Pradėta:</strong> 2023 <br>
+                <strong>Baigta:</strong> Iki dabar <br>
+                <strong>Laipsnis:</strong> Bakalauro laipsnis: Inžinerijos moksluose
+            </li>
+            <li>
+                <strong>Mokykla:</strong> Vilniaus Licėjus <br>
+                <strong>Pradėta:</strong> 2019 <br>
+                <strong>Baigta:</strong> 2023
+            </li>
+        </ul>
+        
+        <h3>Darbo Patirtis</h3>
+        <ul>
+            <li>
+                <strong>Įmonė:</strong> UAB „Technologijų pasaulis“ <br>
+                <strong>Pozicija:</strong> Programuotojas <br>
+                <strong>Pradėta:</strong> 2022 <br>
+                <strong>Baigta:</strong> 2023 <br>
+                <strong>Atsakomybės:</strong> Įmonės programinės įrangos kūrimas ir priežiūra.
+            </li>
+            <li>
+                <strong>Įmonė:</strong> UAB „Inovatyvūs sprendimai“ <br>
+                <strong>Pozicija:</strong> Vyresnysis programuotojas <br>
+                <strong>Pradėta:</strong> 2024 <br>
+                <strong>Atsakomybės:</strong> Naujų projektų vadovavimas ir kūrimas.
+            </li>
+        </ul>
+    </section>    
+    <section id="portfolio">
+        <h2>Atlikti darbai</h2>
+        <div class="portfolio-item">
+            <img src="images/pavyzdys1.jpg" alt="Pavyzdys 1" width="300" height="200">
+            <p>Dalis pirmojo Python kodo.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/pavyzdys2.png" alt="Pavyzdys 2" width="300" height="200">
+            <p>Dalis pirmojo C++ kodo.</p>
+        </div>
+    </section>
+    <section id="services">
+        <h2>Paslaugos</h2>
+        <p>Štai ką aš siūlau:</p>
+        <video width="320" height="240" controls>
+            <source src="videos/1pavyzdys.mp4" type="video/mp4">
+            Jūsų naršyklė nepalaiko HTML5 vaizdo įrašų.
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Rm2YVbN7Zsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <audio controls>
+            <source src="audios/1pavyzdys.mp3" type="audio/mp3">
+            Jūsų naršyklė nepalaiko HTML5 garso įrašų.
+        </audio>
+    </section>        
 </body>
 </html>
