@@ -1,17 +1,27 @@
-<!-- Oskaras Koruža, EEF-23 -->
 <!DOCTYPE html>
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmeninė svetainė</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="container">
+        <img src="images/logo.webp" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Apie</a></li>
+                <li><a href="#resume">Aprašymas</a></li>
+                <li><a href="#portfolio">Atlikti darbai</a></li>
+                <li><a href="#services">Paslaugos</a></li>
+            </ul>
+        </nav>
         <h1>Oskaras Koruža</h1>
-        <h1>Energetikos inžinerijos studentas</h1>
+        <h2>Energetikos inžinerijos studentas</h2>
     </header>
-    <section id="about">
+    
+    <section id="about" class="container">
         <h2>Apie</h2>
         <ul>
             <li><strong>Miestas:</strong> Vilnius</li>
@@ -20,12 +30,11 @@
             <li><strong>El. paštas:</strong> el.paštas@example.com</li>
             <li><strong>Išsilavinimas:</strong> Aukštoji mokykla</li>
         </ul>
-    </section>    
-    <section id="resume">
-        <h2>Aprašymas</h2>
-        <p>Esu talentingas ir kūrybingas inžinerijos specialistas iš Vilniaus, Lietuva. Dirbdamas programuotoju įmonėje „Technologijų pasaulis“, įgijau patirties programinės įrangos kūrime ir priežiūroje. Vėliau tapau vyresniuoju programuotoju įmonėje „Inovatyvūs sprendimai“, kur vadovavau naujiems projektams ir prisidėjau prie inovatyvių sprendimų kūrimo.
+    </section>
 
-            Visada siekiu tobulinti savo įgūdžius ir domėtis naujausiomis technologijų tendencijomis. Mano tikslas - kurti kokybiškus, inovatyvius ir naudotojams draugiškus sprendimus.</p>
+    <section id="resume" class="container">
+        <h2>Aprašymas</h2>
+        <p>Esu talentingas ir kūrybingas inžinerijos specialistas iš Vilniaus, Lietuva. Dirbdamas programuotoju įmonėje „Technologijų pasaulis“, įgijau patirties programinės įrangos kūrime ir priežiūroje. Vėliau tapau vyresniuoju programuotoju įmonėje „Inovatyvūs sprendimai“, kur vadovavau naujiems projektams ir prisidėjau prie inovatyvių sprendimų kūrimo. Visada siekiu tobulinti savo įgūdžius ir domėtis naujausiomis technologijų tendencijomis. Mano tikslas - kurti kokybiškus, inovatyvius ir naudotojams draugiškus sprendimus.</p>
         
         <h3>Išsilavinimas</h3>
         <ul>
@@ -58,30 +67,52 @@
                 <strong>Atsakomybės:</strong> Naujų projektų vadovavimas ir kūrimas.
             </li>
         </ul>
-    </section>    
-    <section id="portfolio">
+    </section>
+
+    <section id="portfolio" class="container">
         <h2>Atlikti darbai</h2>
-        <div class="portfolio-item">
-            <img src="images/pavyzdys1.jpg" alt="Pavyzdys 1" width="300" height="200">
-            <p>Dalis pirmojo Python kodo.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="images/pavyzdys2.png" alt="Pavyzdys 2" width="300" height="200">
-            <p>Dalis pirmojo C++ kodo.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/pavyzdys1.jpg" alt="Pavyzdys 1" width="300" height="200">
+                <p>Dalis pirmojo Python kodo.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/pavyzdys2.png" alt="Pavyzdys 2" width="300" height="200">
+                <p>Dalis pirmojo C++ kodo.</p>
+            </div>
         </div>
     </section>
-    <section id="services">
+
+    <section id="services" class="container">
         <h2>Paslaugos</h2>
         <p>Štai ką aš siūlau:</p>
         <video width="320" height="240" controls>
             <source src="videos/1pavyzdys.mp4" type="video/mp4">
             Jūsų naršyklė nepalaiko HTML5 vaizdo įrašų.
         </video>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Rm2YVbN7Zsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rm2YVbN7Zsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <audio controls>
             <source src="audios/1pavyzdys.mp3" type="audio/mp3">
             Jūsų naršyklė nepalaiko HTML5 garso įrašų.
         </audio>
     </section>        
+
+    <!-- Šviesaus/Tamsaus režimo mygtukas -->
+    <button id="theme-toggle">Šviesus/Tamsus režimas</button>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Grįžti į viršų">⬆️</button>
+
+    <footer class="container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="images/fb.png" alt="Facebook" width="50" height="50"></a>
+            <a href="https://www.twitter.com/"><img src="images/X.jpg" alt="Twitter" width="50" height="50"></a>
+            <a href="https://www.linkedin.com/"><img src="images/L.png" alt="LinkedIn" width="50" height="50"></a>
+        </div>
+        <p>Kontaktinė informacija: el.paštas@example.com</p>
+        <p>Created by Oskaras Koruža</p>
+    </footer>
+
+    <script src="functions.js"></script>
 </body>
 </html>
