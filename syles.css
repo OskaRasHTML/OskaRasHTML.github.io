@@ -38,15 +38,15 @@ body.dark-theme a:hover {
 
 header {
   background: #fff;
-  color: var(--text-light); /* Ensure text is visible */
+  color: var(--text-light);
   padding: 20px;
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-theme header {
-  background: #333; /* Dark background for header */
-  color: var(--text-dark); /* Ensure text is visible */
+  background: #333;
+  color: var(--text-dark);
 }
 
 header h1 {
@@ -107,7 +107,7 @@ section {
 }
 
 body.dark-theme section {
-  background: #333; /* Dark background for sections */
+  background: #333; 
 }
 
 section h2 {
@@ -149,7 +149,7 @@ section h2 {
 }
 
 body.dark-theme .services .service {
-  background: #333; /* Dark background for services */
+  background: #333;
 }
 
 .services .service h3 {
@@ -181,7 +181,6 @@ body.dark-theme .services .service {
   }
 }
 
-/* Scroll-to-Top Button */
 #scroll-to-top {
   display: none;
   position: fixed;
@@ -203,13 +202,11 @@ body.dark-theme .services .service {
   background-color: #0056b3;
 }
 
-/* Ensure footer text color changes in dark theme */
 body.dark-theme footer {
-  background: #333; /* Dark background for footer */
+  background: #333;
   color: var(--text-dark);
 }
 
-/* Specifically target the footer text */
 body.dark-theme footer p,
 body.dark-theme footer .social-icons a {
   color: var(--text-dark);
