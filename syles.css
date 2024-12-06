@@ -1,0 +1,216 @@
+:root {
+  --background-light: #f4f4f4;
+  --background-dark: #000000;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --link-light: #007BFF;
+  --link-dark: #4a90e2;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--link-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+body.dark-theme a {
+  color: var(--link-dark);
+}
+
+body.dark-theme a:hover {
+  color: #82b1ff;
+}
+
+header {
+  background: #fff;
+  color: var(--text-light); /* Ensure text is visible */
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme header {
+  background: #333; /* Dark background for header */
+  color: var(--text-dark); /* Ensure text is visible */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+header h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+header img.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme nav ul li a {
+  color: var(--link-dark);
+}
+
+nav ul li a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+body.dark-theme nav ul li a:hover {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+section {
+  padding: 40px;
+  margin: 20px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme section {
+  background: #333; /* Dark background for sections */
+}
+
+section h2 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.portfolio-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services .service {
+  flex: 1 0 300px;
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .services .service {
+  background: #333; /* Dark background for services */
+}
+
+.services .service h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.services .service p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 28px;
+  }
+
+  header h2 {
+      font-size: 20px;
+  }
+
+  section {
+      padding: 30px;
+  }
+
+  .services .service {
+      flex: 1 0 100%;
+  }
+}
+
+/* Scroll-to-Top Button */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure footer text color changes in dark theme */
+body.dark-theme footer {
+  background: #333; /* Dark background for footer */
+  color: var(--text-dark);
+}
+
+/* Specifically target the footer text */
+body.dark-theme footer p,
+body.dark-theme footer .social-icons a {
+  color: var(--text-dark);
+}
