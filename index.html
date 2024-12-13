@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmeninė svetainė</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <header class="container">
-        <img src="images/logo.webp" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">Apie</a></li>
-                <li><a href="#resume">Aprašymas</a></li>
-                <li><a href="#portfolio">Atlikti darbai</a></li>
-                <li><a href="#services">Paslaugos</a></li>
-            </ul>
-        </nav>
-        <h1>Oskaras Koruža</h1>
-        <h2>Energetikos inžinerijos studentas</h2>
+    <header class="container header">
+        <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
+            <path d="M0,100 C300,200 900,0 1200,100 L1200,300 L0,300 Z" fill="#007BFF" />
+            <path d="M0,200 C300,100 900,300 1200,200 L1200,300 L0,300 Z" fill="#0056b3" opacity="0.8" />
+            
+            <foreignObject x="0" y="50" width="1200" height="200">
+                <div xmlns="http://www.w3.org/1999/xhtml" class="header-content">
+                    <img src="images/logo.webp" alt="Logo" class="logo">
+
+                    <nav>
+                        <ul>
+                            <li><a href="#about">Apie</a></li>
+                            <li><a href="#resume">Aprašymas</a></li>
+                            <li><a href="#portfolio">Atlikti darbai</a></li>
+                            <li><a href="#services">Paslaugos</a></li>
+                        </ul>
+                    </nav>
+                    <h1>Oskaras Koruža</h1>
+                    <h2>Energetikos inžinerijos studentas</h2>
+                </div>
+            </foreignObject>
+        </svg>
     </header>
-    
+    <section id="clock" class="container" style="text-align: center; font-size: 24px; margin-top: 20px;">
+        <p>Dabartinis laikas:</p>
+        <div id="time-display">00:00:00</div>
+    </section>
     <section id="about" class="container">
         <h2>Apie</h2>
         <ul>
@@ -31,11 +46,10 @@
             <li><strong>Išsilavinimas:</strong> Aukštoji mokykla</li>
         </ul>
     </section>
-
     <section id="resume" class="container">
         <h2>Aprašymas</h2>
         <p>Esu talentingas ir kūrybingas inžinerijos specialistas iš Vilniaus, Lietuva. Dirbdamas programuotoju įmonėje „Technologijų pasaulis“, įgijau patirties programinės įrangos kūrime ir priežiūroje. Vėliau tapau vyresniuoju programuotoju įmonėje „Inovatyvūs sprendimai“, kur vadovavau naujiems projektams ir prisidėjau prie inovatyvių sprendimų kūrimo. Visada siekiu tobulinti savo įgūdžius ir domėtis naujausiomis technologijų tendencijomis. Mano tikslas - kurti kokybiškus, inovatyvius ir naudotojams draugiškus sprendimus.</p>
-        
+
         <h3>Išsilavinimas</h3>
         <ul>
             <li>
@@ -95,6 +109,14 @@
             <source src="audios/1pavyzdys.mp3" type="audio/mp3">
             Jūsų naršyklė nepalaiko HTML5 garso įrašų.
         </audio>
+        
+        <p>Vektorinėje analizėje esminis vaidmuo tenka divergencijos teoremai. Ši teorema nurodo, kad vektorinės funkcijos srautas per uždarą paviršių yra lygus funkcijos divergencijos integralui to paviršiaus viduje:</p>
+
+        <p>
+            $$\int_{D} (\nabla \cdot \mathbf{F}) \, dV = \int_{\partial D} \mathbf{F} \cdot \mathbf{n} \, dS$$
+        </p>
+
+        <p>Ši teorema yra ypač naudinga fizikoje ir inžinerijoje, kur ji supaprastina srautų vertinimą per sudėtingus paviršius. Ji randa taikymą skysčių dinamikos, elektromagnetizmo ir kitose srityse, kuriose dominuoja vektorinių funkcijų analizė.</p>
     </section>        
 
     <button id="theme-toggle">Šviesus/Tamsus režimas</button>
